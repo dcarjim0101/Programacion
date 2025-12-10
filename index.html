@@ -77,6 +77,29 @@
             font-weight: 600;
             color: #333;
         }
+        /* Galería Tema 2 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 12px;
+            align-items: center;
+        }
+        .thumb {
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #fafafa;
+            display: block;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.25s ease;
+        }
+        .thumb:hover img { transform: scale(1.06); }
     </style>
 </head>
 <body>
@@ -140,6 +163,17 @@
                     <a href="https://github.com/dcarjim0101/Programacion/blob/main/Tema%202/python/Ejercicio%205.py" target="_blank" class="ejercicio">Ejercicio 5</a>
                     <a href="https://github.com/dcarjim0101/Programacion/blob/main/Tema%202/python/Ejercicio%206.1" target="_blank" class="ejercicio">Ejercicio 6</a>
                     <a href="https://github.com/dcarjim0101/Programacion/blob/main/Tema%202/python/busqueda_binaria.py" target="_blank" class="ejercicio">Búsqueda Binaria</a>
+                </div>
+                
+                <div class="tema" style="margin-top:20px;">
+                    <div class="tema-title">📸 Galería - Tema 2</div>
+                    <div class="gallery">
+                        <a class="thumb" href="Tema%202/foto1congra.png" target="_blank"><img src="Tema%202/foto1congra.png" alt="foto1"></a>
+                        <a class="thumb" href="Tema%202/foto2congra.png" target="_blank"><img src="Tema%202/foto2congra.png" alt="foto2"></a>
+                        <a class="thumb" href="Tema%202/foto3congra.png" target="_blank"><img src="Tema%202/foto3congra.png" alt="foto3"></a>
+                        <a class="thumb" href="Tema%202/foto4congra.png" target="_blank"><img src="Tema%202/foto4congra.png" alt="foto4"></a>
+                        <a class="thumb" href="Tema%202/foto5congra.png" target="_blank"><img src="Tema%202/foto5congra.png" alt="foto5"></a>
+                    </div>
                 </div>
             </div>
         </div>
